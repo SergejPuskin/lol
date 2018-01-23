@@ -1,0 +1,319 @@
+/*BODY*/
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+}
+header{
+    background: #434d58;
+}
+.container-fluid{
+    padding-left: 0;
+    padding-right: 0;
+}
+p{
+    margin-bottom: 0;
+    padding-bottom: 20px;
+}
+
+
+.big-detail{
+    background-color: #737d89;
+}
+
+.fixed{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    overflow: auto;
+}
+
+.image-news{
+    margin-bottom: 20px;
+}
+.image-news > img{
+    width: 100%;
+}
+/*HLAVNÍ STRÁNKA*/
+/*Menu*/
+.navbar{
+    padding-left: 0!important;
+    padding-right: 0!important;
+    background-color: #434d58!important;
+}
+.bg-faded{
+    min-height: 80px;
+    background-color: #434d58;
+}
+.navbar-light .navbar-nav .nav-link{
+    color: #fefefe;
+    margin-right: 30px;
+}
+.d-inline-block {
+    width: 150px;
+    height: 100%;
+}
+
+.navbar-brand img{
+    width: 120px;
+    height: 80px
+}
+
+
+@media screen and (max-width: 768px){   
+    .navbar-light .navbar-nav .nav-link{
+        text-align: right;
+        margin-right: 0;
+    }
+}
+
+/*První zpráva*/
+.first-news{
+
+    height: 90vh;
+    padding-left: 10px;
+
+}
+
+.categories h1{
+    margin-top: 50px;
+}
+.link-news:hover{
+    text-decoration: none;
+    color: #000;
+}
+
+.link-news{
+    font-size: 30px;
+    color: #000;
+}
+
+.first-news p{
+    color: white;
+}
+
+.first-news > img{
+    width: 100%;
+}
+
+.first-news > div > h1{
+    padding-top: 50px;
+    color: #ffffff;
+}
+
+.text-first-news{
+    bottom: 10%;
+    position: absolute;
+}
+
+.triangle{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 20px 20px 0 20px;
+    border-color: #ffffff transparent transparent transparent;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+}
+
+@media screen and (max-width: 768px){
+    .first-news > div > h1{
+        padding-top: 10px;
+    }
+    .first-news p{
+        font-size: 10px;
+    }
+    .d-inline-block {
+        width: 60px;
+        height: 40px;
+    }
+}
+
+/*KONEC - HLAVNÍ STRÁNKA*/
+/*DETAIL*/
+
+.detail-image{
+    margin-bottom: 20px;
+    width: 100%;
+}
+.nadpis-detail{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.column{
+    column-count: 3; 
+    padding-bottom: 60px;
+}
+/*KONEC- DETAIL*/
+/*ADMINUS PAGES*/
+/*Up green*/
+
+.form-add{
+    display: flex;
+    flex-direction: column;
+}
+.form-add input{
+    width: 100%;
+}
+
+input[type="submit"]{
+    margin-top: 10px;
+}
+
+.nav > li{
+    text-align: center;
+    width: 33%;
+    font-size: 20px;
+}
+.nav{
+    height: 50px;
+    margin-bottom: 10px;
+    background-color: #434d58;
+}
+.nav > li > a{
+    color: #fff;
+    text-decoration: none;
+}
+/*Global*/
+
+input{
+    width: 30%;
+    margin-bottom: 10px;
+}
+
+legend{
+    font-size: 2.5em;
+}
+
+input[type=submit]{
+    width: 10%;
+    text-align: center;
+}
+
+/*Menu Left*/
+a:focus, a:hover {
+    color: white;
+    text-decoration: underline;
+}
+@media (min-width: 768px) {
+    .bootstrap-vertical-nav .collapse {
+        display: block;
+    }
+}
+
+.flex-column{
+    padding-left: 15px;
+    padding-top: 15px;
+}
+
+.info-right{
+    padding-left: 0px;
+    padding-right: 0px;
+    background-color: #c8cec8;
+    border: solid 30px #414241;
+}
+
+.menu-left{
+    background-color: #253e47;
+    height: 100%;
+}
+
+.menu-left-up{
+    padding-left: 0px;
+    padding-right: 0px;
+
+}
+
+.nav-link{
+    color: white;
+    font-size: 25px;
+}
+
+.nav-link:hover{
+    color: red;
+}
+
+/*Center Panel*/
+
+.up-right{
+    text-align: center;
+    margin-top: 80px;
+}
+
+.up-right > h1{
+    font-size: 100px;
+}
+
+.all-right{
+
+}
+
+.login-div{
+    margin-top: 50px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.error-login
+{
+    text-align: center;
+    z-index: 2;
+    color: #e20c0c;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+
+
+.register-div{
+    text-align: center;
+}
+
+/*Footer*/
+footer{
+    text-align: center;
+    background-color: #434d58;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 100%;
+    flex-basis: auto;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+.content-all-container{
+    flex-basis: auto;
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+
+
+.footer-a{
+    color: #ffffff;
+}
+.footer-a:hover{
+    text-decoration: none;
+}
+
+footer img{
+    height: 200px;
+}
+
+footer li{
+    padding-top: 20px;
+    color: #ffffff;
+    display:inline-block;
+    vertical-align: top;
+    padding-right: 30px;
+}
+
+@media screen and (max-width: 768px){
+    footer li{
+        display: block;
+    }
+}

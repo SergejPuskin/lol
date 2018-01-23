@@ -1,0 +1,17 @@
+Options -Indexes
+RewriteEngine On
+# RewriteBase \
+
+RewriteCond {REQUEST_FILENAME} !-f
+RewriteCond {REQUEST_FILENAME} !-d
+
+# presmerovani bez www na verzi s www
+#RewriteCond %{HTTP_HOST} !^www\.(.*)
+#RewriteRule (.*) http://www.%{HTTP_HOST}/$1 [R=301,L]
+
+RewriteRule !\.(css|js|zip|rar|png|jpg|gif|pdf|svg)$ index.php [L]
+
+AddType application/x-httpd-php .phtml
+
+AddType image/svg+xml svg
+AddType image/svg+xml svgz

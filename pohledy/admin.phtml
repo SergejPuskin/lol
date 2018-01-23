@@ -1,0 +1,65 @@
+<?php
+
+
+
+
+?>
+
+<ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#home">Přídat </a></li>
+    <li><a data-toggle="tab" href="#menu1">Odebrat</a></li>
+    <li><a data-toggle="tab" href="#menu2">Vypsat</a></li>
+</ul>
+    
+<div class="tab-content">
+    <div id="home" class="tab-pane fade in active">
+        <div class="container">
+            <h3>Přidat</h3>
+            <div>
+                <form method="post" class="form-add" enctype="multipart/form-data">
+                    <label for="kategorie">Kategorie</label>                                
+                    
+                    <select name="kategorie">
+                        <option value="domov">Domov</option>
+                        <option value="zahranici">Zahranici</option>
+                        <option value="it">IT</option>
+                        <option value="eko">Ekonomika</option>
+                    </select>
+
+                    <label for="nadpis">Napis zprávy</label>                                
+                    <input type="text" id="nadpis" name="nadpis">
+                    
+                    <label for="obrazek1">První obrázek</label>                                
+                    <input type="file" id="obrazek1" name="obrazek1">
+                    
+                    <label for="datum">Datum</label>                                
+                    <input type="date" id="datum" name="datum">
+                    
+                    <label for="text1">Text</label>                                
+                    <textarea rows="5" cols="50" id="text1" name="text1">
+
+                    </textarea>
+
+                    <label for="obrazek2">Druhý obrázek</label>                                
+                    <input type="file" id="obrazek2" name="obrazek2">
+
+                    <label for="text2">Text</label>                              
+                    <textarea rows="5" cols="50" id="text2" name="text2">
+                            
+                    </textarea>
+
+                    <input type="submit" value="Přidat" id="poslat" name="poslat">
+                </form>
+            </div>            
+        </div>  
+    </div>
+
+    <div id="menu1" class="tab-pane fade">
+        <h3>Odebrat</h3>
+        
+    </div>
+    <div id="menu2" class="tab-pane fade">
+        <h3>Vypsat</h3>
+        
+    </div>
+</div>

@@ -1,0 +1,12 @@
+<?php
+$clanky = Db::queryAll("SELECT * FROM zpravy WHERE kategorie=?","domov");
+foreach ($clanky as $item): ?>
+        <div class="zprava-vypis">
+            <h2><?= $item['nadpis'] ?></h2>
+            <img src="img/<?=$item['obrazek1']?>">
+            <p><?= $item['datum'] ?></p>
+            <p><?= $item['text1'] ?></p>
+            <img src="img/<?=$item['obrazek2']?>">
+            <p><?= $item['text2'] ?></p>
+        </div>
+<?php endforeach; ?>

@@ -1,0 +1,98 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Lukas Dvorak">
+    <title><?=$titulek?></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/Mystyle.css">
+</head>
+<body>
+
+
+    <header>
+        <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">
+                <img src="image/menu-logo.png" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                <a class="nav-item nav-link" href="/domov">Domácí</a>
+                <a class="nav-item nav-link" href="/zahranici">Zahraničí</a>
+                <a class="nav-item nav-link" href="/it">IT</a>
+                <a class="nav-item nav-link" href="/ekonomika">Ekonomika</a>
+                </div>
+            </div>
+        </nav>
+
+    </div>
+
+
+
+
+
+
+
+    </header>
+
+
+
+<div class="content-all-container">
+    <div class="container-fluid">
+        <?php $this->kontroler->vypisPohled(); ?>
+    </div>
+</div>
+
+
+
+
+    <footer>
+        <div>
+            <div>
+                <img src="image/menu-logo.png" class="img-footer">
+            </div>
+            <div>
+                <ul>
+                    <li><a href="/domov" class="footer-a">Domácí</a></li>
+                    <li><a href="/zahranici" class="footer-a">Zahranničí</a></li>
+                    <li><a href="/ekonomika" class="footer-a">Ekonomika</a></li>
+                    <li><a href="/it" class="footer-a">IT</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+<script src="../js/tether.min.js"></script>
+<script src="../js/jquery.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/MyScript.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
